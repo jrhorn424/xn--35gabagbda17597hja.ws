@@ -5,5 +5,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <audio>
+            <source src="base.mp3" type='audio/mpeg; codecs="mp3"' preload='auto'></source>
+            <source src="base.oga" type='audio/ogg; codecs="vorbis"' preload='auto'></source>
+        </audio>
+
+        <script type="text/javascript" src="konami.js"></script>
+        <script>
+            new Konami(function play () {
+                document.querySelector('audio').play();
+            });
+        </script>
     </body>
 </html>
